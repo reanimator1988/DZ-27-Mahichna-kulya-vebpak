@@ -20,7 +20,7 @@ const answers = [
 
 const imageElement = document.createElement('img');
 imageElement.src = myImage;
-document.body.appendChild(imageElement);
+document.querySelector('.magic-8-ball').appendChild(imageElement);
 
 window.shakeMagic8Ball = function() {
   const magic8Ball = document.querySelector(".magic-8-ball");
