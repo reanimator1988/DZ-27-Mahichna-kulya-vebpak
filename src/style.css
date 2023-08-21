@@ -1,0 +1,81 @@
+h1 {
+  font-size: 43px;
+  text-align: center;
+  margin: 0;
+  padding-top: 25px;
+  margin-bottom: 50px;
+}
+
+.answer-display {
+  background-color: rgba(14, 23, 227, 0.8);
+  padding: 20px;
+  border-radius: 50%;
+  border: 5px solid rgb(147, 153, 153);
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 60px;
+  left: 44%;
+}
+
+.shake-animation {
+  animation: shake 0.5s ease-in-out;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.magic-8-ball {
+  margin-top: 100px;
+  position: relative;
+  text-align: center;
+}
+
+.shake-button {
+  background-color: #ff5733;
+  color: white;
+  border: none;
+  padding: 15px 36px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  position: absolute;
+  top: 250px;
+  right: 45%;
+  outline: none;
+}
+
+.shake-button:hover {
+  background-color: #e24e2a;
+  transform: scale(1.05);
+}
+
+@keyframes shake {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-5px);
+  }
+
+  50% {
+    transform: translateX(5px);
+  }
+
+  75% {
+    transform: translateX(-5px);
+  }
+}
